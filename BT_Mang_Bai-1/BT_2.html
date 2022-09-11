@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tim giá trị lớn nhất và vị trí</title>
+</head>
+Bài 2- Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử khác nhau. Chương trình hiển
+thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó.
+<br>
+
+<body>
+<script>
+    let so=[1,2,3,10,14,12,13,4,6,17]
+   let max=so[0]
+    let max_index=0
+for (let i=0; i<so.length; i++){
+    if(max<so[i]){
+        max=so[i]
+        max_index=i
+    }
+    console.log(max, "vị trí trong mảng là  ", i)
+}
+
+</script>
+</body>
+</html>

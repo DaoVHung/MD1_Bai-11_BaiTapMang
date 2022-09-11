@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh Trung Binh Gia Tri Cua Mang</title>
+</head>
+<!--Viết chương trình khởi tạo mảng số nguyên. Hiển hiện giá trị lớn nhất trong mảng đó. In ra-->
+<!--giá trị trung bình của các phần tử trong mảng.-->
+<body>
+
+
+<script>
+    let so=[1,2,3,10,14,12,13,4,6,17]
+    let max=so[0]
+    let cong=0
+    let cong_index=0
+    for (let i = 0; i < so.length; i++) {
+        if ( max<so[i] ){
+            max=so[i]
+            console.log('max========',max)
+        }
+    }
+    for (let i = 0; i < so.length; i++){
+        cong+=so[i]
+        cong_index=i
+        console.log('trung binh =',cong/(cong_index + 1))
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tim V</title>
+</head>
+<body>
+<h1>Nhap vao 1 phan tu de kiem tra</h1>
+<input type="text" id="V">
+<button onclick="kiemTra()">Kiem Tra</button>
+<p id="hienThi">Hien Thi</p>
+
+<script>
+  //Mang cho truoc
+
+  function kiemTra(){
+  let arr=[1,3,35,66,10,'V','TiepNgu']
+      let x=document.getElementById("V").value;
+      for (let i = 0; i < arr.length; i++) {
+          if ( x === arr[i]){
+              document.getElementById("hienThi").innerText='Phan tu da nhap vao co trong mang!'
+          }
+      }
+
+  }
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
