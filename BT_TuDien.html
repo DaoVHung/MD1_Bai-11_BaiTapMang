@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ Điển</title>
+</head>
+<body>
+<script>
+    let tA=prompt("Nhập từ tiếng anh bạn muốn tìm")
+  let array_tiengAnh=["BatMan","IronMan","SuperMan","SpiderMan",]
+  let array_tiengViet=["Người Dơi","Người Inox","Siêu NHân","Người Nhện"]
+
+
+    for( let i=0 ; i<array_tiengAnh.length ; i++){
+        if(tA===array_tiengAnh[i]){
+            alert("Nghĩa của  " + array_tiengAnh[i] + " Là " + array_tiengViet[i] )
+        }else {
+            alert("Không tìm thấy, vui lòng nhập lại!")
+        }
+    }
+</script>
+</body>
+</html>
