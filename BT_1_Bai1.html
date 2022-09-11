@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nối Mảng VS Nhau</title>
+</head>
+<body>
+<h1>Bai 1</h1>
+<script>
+    myColor=["Red", "Green", "White", "Black"]
+    myColor2=myColor.join()
+    alert(myColor2)
+</script>
+<h1>Bai 2</h1>
+<script>
+    let x=window.prompt("Nhập vào 1 dãy số nguyên dương")
+    let array=x.toString()
+    let result=[array[0]]
+    console.log(result)
+
+    for ( let i=1;i <array.length; i++){
+        if((array[i-1]%2===0) && (array[i]%2===0)){
+        result.push('-',array[i])
+        }else {
+            result.push[array[i]]
+        }
+    }
+    console.log(result.join(''))
+</script>
+
+<h1>Bai 3</h1>
+<script>
+    let hh=window.prompt('Nhap du lieu vao day')
+    let UPPER = 'ZWERTYUIOPLKJHGFDSAZXCVBNM'
+    let LOWEr = 'qwertyuioplkjhgfdsazxcvbnm'
+    let re= [];
+    for ( let i=0; i< hh.length; i++){
+        if(UPPER.indexOf(hh[i])!=-1){
+            re.push(hh[i].toLowerCase())
+        }else if (LOWEr.indexOf(hh[i])!=-1){
+            re.push(hh[i].toUpperCase())
+        }else {
+            re.push(hh[i])
+        }
+    }
+    console.log(re.join(''))
+
+
+</script>
+</body>
+</html>
