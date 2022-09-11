@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Tim ki hieu trong chuoi</title>
+</head>
+<body>
+<label>
+  <textarea cols="30" rows="10" id="text"></textarea>
+  <input type="button" value="Chuyen Doi" id="nhap" onclick="chuyenDoi()">
+</label>
+<p id="hienThi"></p>
+<script>
+  function chuyenDoi(){
+    tu=document.getElementById('text').value;
+    console.log('tu=', tu)
+     tu1 = tu.replace(/-/g,"_")
+    document.getElementById('hienThi').innerText= tu1
+  }
+</script>
+</body>
+</html>

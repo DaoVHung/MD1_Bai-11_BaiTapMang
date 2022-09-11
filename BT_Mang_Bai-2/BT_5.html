@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>So Sanh 2 Chuoi</title>
+</head>
+<body>
+<h3>Chuoi 1</h3>
+<input id="chuoi1" type="text">
+<h3>Chuoi2</h3>
+<input id="chuoi2" type="text">
+<br> <br>
+<button onclick="soSanh()">So Sanh</button>
+<h3 id="hienThi">Ket Qua So Sanh</h3>
+<script>
+    function soSanh(){
+    let arr1=[];
+    let chuoiTu1=document.getElementById('chuoi1').value;
+    arr1.push(chuoiTu1)
+    console.log('arr1=',arr1)
+    let arr2=[];
+    let chuoiTu2=document.getElementById('chuoi2').value;
+    arr2.push(chuoiTu2)
+    console.log('arr2=',arr2)
+        for (let i = 0; i < arr1.length; i++) {
+            if(arr1[i]===arr2[i]){
+                document.getElementById('hienThi').innerText= "2 chuoi giong nhau"
+            }else {
+                document.getElementById('hienThi').innerText= "ko giong nhau"
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
